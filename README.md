@@ -11,4 +11,8 @@ JAVA언어로 프로그래머스와 백준 알고리즘 문제를 풀어 업로�
  6. **프로그래머스 모의고사** [문제](https://programmers.co.kr/learn/courses/30/lessons/42840) - [코드](https://github.com/sehui-byte/Algorithm_solution/blob/master/Programmers/level1/%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC/Solution.java)
  7. **프로그래머스 소수 찾기** [문제](https://programmers.co.kr/learn/courses/30/lessons/12921) - [코드](https://github.com/sehui-byte/Algorithm_solution/blob/master/Programmers/level1/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0/Solution.java)
  8. **2960번 에라토스테네스의 체** [문제](https://www.acmicpc.net/problem/2960) - [코드](https://github.com/sehui-byte/Algorithm_solution/blob/master/BOJ2960.java)
- 
+ 9. **프로그래머스 문자열을 정수로 바꾸기** 
+ 10. **프로그래머스 가운데 글자 가져오기** 
+ 11. **프로그래머스 문자열 내 마음대로 정렬하기** 
+ 12. **프로그래머스 같은 숫자는 싫어** 
+
