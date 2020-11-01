@@ -2,7 +2,7 @@
 
 ## **BaekJoon & Programmers Algorithm 문제 풀이**
 JAVA언어로 프로그래머스와 백준 알고리즘 문제를 풀어 업로드합니다.
-블로그에 꾸준히 업로드하고 있습니다. [블로그주소](https://blog.naver.com/wintersnow3)
+[블로그](https://blog.naver.com/wintersnow3)에 꾸준히 업로드하고 있습니다.
 
  1. **1914번 하노이 탑** [문제](https://www.acmicpc.net/problem/1914) - [코드](https://github.com/sehui-byte/Algorithm_solution/blob/master/BOJ1914.java)
  2. **17478번 재귀함수가 뭔가요?** [문제](https://www.acmicpc.net/problem/17478) - [코드](https://github.com/sehui-byte/Algorithm_solution/blob/master/BOJ17478.java)
