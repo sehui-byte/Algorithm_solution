@@ -1,3 +1,8 @@
+/*
+스택을 이용하여 문제를 풀었다.
+어렵진 않았는데 자꾸 peek() 시에 empty() 확인해주는 것을 깜박해서 Exception이 발생했었다.
+*/
+
 import java.util.Stack;
 import java.util.ArrayList;
 
