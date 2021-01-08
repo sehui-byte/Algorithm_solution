@@ -6,14 +6,14 @@ import java.io.OutputStreamWriter;
 import java.util.*;
 
 public class BOJ1874 {
-	static int arr[]; //¸¸µé ¼ö¿­ (ÀÔ·Â¹Ş´Â ¼ö¿­)
-	static Stack<Integer> s = new Stack<Integer>(); //°ªµéÀ» ³Ö¾ú´Ù°¡ »©´Â ½ºÅÃ
-	static Stack<String> result = new Stack<String>(); //+,-Ãâ·ÂÇÏ´Â °á°ú ½ºÅÃ
-	static int max; //½ºÅÃ¿¡ pushÇÑ Á¤¼ö Áß °¡Àå Å« Á¤¼ö
+	static int arr[]; //ë§Œë“¤ ìˆ˜ì—´ (ì…ë ¥ë°›ëŠ” ìˆ˜ì—´)
+	static Stack<Integer> s = new Stack<Integer>(); //ê°’ë“¤ì„ ë„£ì—ˆë‹¤ê°€ ë¹¼ëŠ” ìŠ¤íƒ
+	static Stack<String> result = new Stack<String>(); //+,-ì¶œë ¥í•˜ëŠ” ê²°ê³¼ ìŠ¤íƒ
+	static int max; //ìŠ¤íƒì— pushí•œ ì •ìˆ˜ ì¤‘ ê°€ì¥ í° ì •ìˆ˜
 
 	static boolean isPossible(int n) {
-		int index = 0; //¿Ï¼ºÇÏ·Á´Â ¼ö¿­ index, index=0ÀÌ¸é arr[0]°ú °°ÀÌ ¸¸µå·Á´Â °Í
-		//ÀÏ´Ü ½ºÅÃ¿¡ 1À» ³Ö´Â´Ù (ÃÊ±âÈ­)
+		int index = 0; //ì™„ì„±í•˜ë ¤ëŠ” ìˆ˜ì—´ index, index=0ì´ë©´ arr[0]ê³¼ ê°™ì´ ë§Œë“œë ¤ëŠ” ê²ƒ
+		//ì¼ë‹¨ ìŠ¤íƒì— 1ì„ ë„£ëŠ”ë‹¤ (ì´ˆê¸°í™”)
 		s.push(1);
 		result.push("+");
 		max = 1;
@@ -38,7 +38,7 @@ public class BOJ1874 {
 			if(arr[index] == s.peek() && !s.isEmpty()) {
 				s.pop();
 				result.push("-");
-				index++; //¸ñÇ¥°ªÀ» ´ÙÀ½ arr[index]·Î ¼³Á¤
+				index++; //ëª©í‘œê°’ì„ ë‹¤ìŒ arr[index]ë¡œ ì„¤ì •
 			}
 		}
 		return true;
@@ -57,7 +57,7 @@ public class BOJ1874 {
 
 		isPossible(n);
 
-		//°á°ú Ãâ·Â
+		//ê²°ê³¼ ì¶œë ¥
 		Iterator<String> it = result.iterator();
 		if(!result.isEmpty()) {
 			while(it.hasNext()) {
