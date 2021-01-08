@@ -1,3 +1,7 @@
+/*
+ë°±íŠ¸ë˜í‚¹ ëŒ€í‘œì ì¸ ë¬¸ì œì¸ n-queenë¬¸ì œì´ë‹¤.
+*/
+
 import java.util.Scanner;
 
 public class BOJ9663 {
@@ -6,13 +10,13 @@ public class BOJ9663 {
 	static int col[];
 	static int n;
 	
-	static boolean isPossible(int level) {//¿­ÀÌ °ãÄ¡°Å³ª ´ë°¢¼±¿¡ ÄıÀÌ Á¸ÀçÇÏ°Å³ª ÇÏ¸é false
-		for(int i = 1; i<level; i++) {//ÄıÀÌ À§Ä¡ÇÑ ¿­ÀÌ °ãÄ¥¶§
+	static boolean isPossible(int level) {//ì—´ì´ ê²¹ì¹˜ê±°ë‚˜ ëŒ€ê°ì„ ì— í€¸ì´ ì¡´ì¬í•˜ê±°ë‚˜ í•˜ë©´ false
+		for(int i = 1; i<level; i++) {//í€¸ì´ ìœ„ì¹˜í•œ ì—´ì´ ê²¹ì¹ ë•Œ
 			if(col[i] == col[level])
 				return false;
 		}
 		
-		for(int i =1; i<level; i++) {//ÄıÀÌ ¼­·Î ´ë°¢¼±¿¡ Á¸ÀçÇÒ¶§
+		for(int i =1; i<level; i++) {//í€¸ì´ ì„œë¡œ ëŒ€ê°ì„ ì— ì¡´ì¬í• ë•Œ
 			if(Math.abs(col[i]-col[level]) == level-i) {
 				return false;
 			}
@@ -23,17 +27,17 @@ public class BOJ9663 {
 	
 	static boolean setQueen(int level) {
 		
-		if(!isPossible(level)) {//ÄıÀÌ Á¤»óÀûÀÎ À§Ä¡¿¡ Á¸ÀçÇÏÁö ¾ÊÀ¸¸é false
+		if(!isPossible(level)) {//í€¸ì´ ì •ìƒì ì¸ ìœ„ì¹˜ì— ì¡´ì¬í•˜ì§€ ì•Šìœ¼ë©´ false
 			return false;
 		}
 		
-		else if(level == n) {//¸ğµç Çà¿¡ ÄıÀ» ¹èÄ¡ÇÏ¿´À» °æ¿ì true
+		else if(level == n) {//ëª¨ë“  í–‰ì— í€¸ì„ ë°°ì¹˜í•˜ì˜€ì„ ê²½ìš° true
 			count++;
 			return true;
 		}
 		
 		for(int i = 1; i<=n; i++) {
-			col[level+1] = i; //ÇÑ Çà¿¡ ÄıÀ» ¹èÄ¡ÇÑ´Ù
+			col[level+1] = i; //í•œ í–‰ì— í€¸ì„ ë°°ì¹˜í•œë‹¤
 			setQueen(level+1); 
 			}
 		return false;
@@ -43,11 +47,11 @@ public class BOJ9663 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt(); //n°³ÀÇ Äı ÀÔ·Â
+		n = sc.nextInt(); //nê°œì˜ í€¸ ì…ë ¥
 		col = new int[n+1];
 		setQueen(0);
 		System.out.println(count);
 	}
 
 }
-¤º
+ã…Š
