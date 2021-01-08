@@ -7,19 +7,19 @@ public class BOJ1914 {
 		if(n == 0) {
 			return;
 		}
-		Hanoi1(n-1, x, 6-x-y); //n-1°³ÀÇ ¿ø¹İÀ» Áß°£ ±âµÕÀ¸·Î ¿Å±ä´Ù
+		Hanoi1(n-1, x, 6-x-y); //n-1ê°œì˜ ì›ë°˜ì„ ì¤‘ê°„ ê¸°ë‘¥ìœ¼ë¡œ ì˜®ê¸´ë‹¤
 		System.out.println(x + " " + y);
-		Hanoi1(n-1, 6-x-y, y); //n-1°³ÀÇ ¿ø¹İÀ» Áß°£±âµÕ¿¡¼­ ¸ñÇ¥ÁöÁ¡ ±âµÕÀ¸·Î ¿Å±ä´Ù
+		Hanoi1(n-1, 6-x-y, y); //n-1ê°œì˜ ì›ë°˜ì„ ì¤‘ê°„ê¸°ë‘¥ì—ì„œ ëª©í‘œì§€ì  ê¸°ë‘¥ìœ¼ë¡œ ì˜®ê¸´ë‹¤
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); //¿øÆÇ °³¼ö
+		int n = sc.nextInt(); //ì›íŒ ê°œìˆ˜
 		BigInteger count = BigInteger.valueOf(2).pow(n); //2
-		//BigInteger tmp = count.pow(n); //2ÀÇ n½Â
-		BigInteger result = count.subtract(BigInteger.ONE); //»©±â1
+		//BigInteger tmp = count.pow(n); //2ì˜ nìŠ¹
+		BigInteger result = count.subtract(BigInteger.ONE); //ë¹¼ê¸°1
 		
 		System.out.println(result);
 		
